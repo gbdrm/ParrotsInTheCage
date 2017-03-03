@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -11,7 +12,16 @@ namespace WebApplication7.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            DataContext db = new DataContext();
+            var cages = db.Cages
+                .Include(c => c.Parrots)
+                .Where(c => c.Parrots.Any(p => p.Age == 2));
+
+            IQueryable<IGrouping<int, Parrot>> parrots = db.Parrots
+                .Where(p => p.Age > 0)
+                .GroupBy(p => p.CageId);
+
+            return View(parrots);
         }
 
         public ActionResult About()

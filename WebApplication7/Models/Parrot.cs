@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication7.Models
 {
@@ -14,5 +15,7 @@ namespace WebApplication7.Models
 
         public int CageId { get; set; }
         public virtual Cage Cage { get; set; }
+
+        //public virtual ICollection<string>
     }
 }
