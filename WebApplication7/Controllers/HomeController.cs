@@ -3,14 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using log4net;
 using WebApplication7.Models;
 
 namespace WebApplication7.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ILog logger = LogManager.GetLogger(typeof(HomeController));
+
         public ActionResult Index()
         {
+            logger.Info("Index page opened");
+
             return View();
         }
 
