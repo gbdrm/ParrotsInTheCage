@@ -56,6 +56,14 @@
       <HintPath>..\packages\log4net.2.0.7\lib\net45-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -146,6 +154,10 @@
     <Compile Include="Migrations\201703011508571_AddCage.Designer.cs">
       <DependentUpon>201703011508571_AddCage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703080933294_AddIdentity.cs" />
+    <Compile Include="Migrations\201703080933294_AddIdentity.Designer.cs">
+      <DependentUpon>201703080933294_AddIdentity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cage.cs" />
     <Compile Include="Models\DataContext.cs" />
@@ -216,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703011508571_AddCage.resx">
       <DependentUpon>201703011508571_AddCage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703080933294_AddIdentity.resx">
+      <DependentUpon>201703080933294_AddIdentity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
