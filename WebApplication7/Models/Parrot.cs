@@ -16,5 +16,9 @@ namespace WebApplication7.Models
 
         public int CageId { get; set; }
         public virtual Cage Cage { get; set; }
+
+        public string OwnerId { get; set; }
+        [ForeignKey("OwnerId")]
+        public virtual ApplicationUser Owner { get; set; }
     }
 }
