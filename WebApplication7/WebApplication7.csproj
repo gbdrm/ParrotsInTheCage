@@ -158,6 +158,10 @@
     <Compile Include="Migrations\201703080933294_AddIdentity.Designer.cs">
       <DependentUpon>201703080933294_AddIdentity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703081017095_Owner.cs" />
+    <Compile Include="Migrations\201703081017095_Owner.Designer.cs">
+      <DependentUpon>201703081017095_Owner.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cage.cs" />
     <Compile Include="Models\DataContext.cs" />
@@ -231,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703080933294_AddIdentity.resx">
       <DependentUpon>201703080933294_AddIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703081017095_Owner.resx">
+      <DependentUpon>201703081017095_Owner.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

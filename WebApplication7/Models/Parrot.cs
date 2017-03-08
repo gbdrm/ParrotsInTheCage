@@ -16,5 +16,7 @@ namespace WebApplication7.Models
 
         public int CageId { get; set; }
         public virtual Cage Cage { get; set; }
+
+       
     }
 }
