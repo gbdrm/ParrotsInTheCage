@@ -14,7 +14,7 @@ namespace WebApplication7.Migrations
 
         protected override void Seed(WebApplication7.Models.DataContext context)
         {
-            
+            //test 2
         }
     }
 }
